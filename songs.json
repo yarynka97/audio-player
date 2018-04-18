@@ -1,0 +1,29 @@
+﻿{
+  "audio": [
+    {
+      "id": 0,
+      "name": "vivienne_mort_-_gotika",
+      "src": "audio/vivienne_mort_-_gotika.mp3"
+    },
+    {
+      "id": 1,
+      "name": "vivienne_mort_-_how",
+      "src": "audio/vivienne_mort_-_how.mp3"
+    },
+    {
+      "id": 2,
+      "name": "vivienne_mort_-_hto_ti_takij",
+      "src": "audio/vivienne_mort_-_hto_ti_takij.mp3"
+    },
+    {
+      "id": 3,
+      "name": "vivienne_mort_-_inij",
+      "src": "audio/vivienne_mort_-_inij.mp3"
+    },
+    {
+      "id": 4,
+      "name": "vivienne_mort_-_koliskova",
+      "src": "audio/vivienne_mort_-_koliskova.mp3"
+    } 
+  ]
+}
