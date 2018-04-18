@@ -13,21 +13,23 @@
     }
 
     const formTable = () => {
+        document.getElementById('current-song').innerHTML = this.songsList[this.songId].name;
         let songs = document.createDocumentFragment();
-        let table = document.getElementById('list');
+        let list = document.getElementById('list');
         this.songsList.forEach(function (song) {
-            let tr = document.createElement('tr');
+            let li = document.createElement('li');
             let text = document.createTextNode(song.name);
             let songId = document.createAttribute('songId');
             songId.value = song.id;
-            tr.appendChild(text);
-            tr.setAttributeNode(songId);
-            tr.addEventListener('click', function () {
+            li.appendChild(text);
+            li.setAttributeNode(songId); li.classList.add('unchosen');
+            li.addEventListener('click', function () {
                 chooseSong(songId.value);
             });
-            songs.appendChild(tr);
+            songs.appendChild(li);
         });
-        table.appendChild(songs);
+        list.appendChild(songs);
+        setChosenSong(0);
     }
 
     const loadSongsList = () => {
@@ -47,6 +49,7 @@
         }
         this.player = new Player(this.songsList[id].src);
         this.player.playSong(this.songsList[id]);
+        setChosenSong(id);
         this.playing = true;
         toggleButtons();
         this.songId = id;
@@ -73,22 +76,37 @@
         let id = (this.songId === 4) ?
             0 :
             Number.parseInt(this.songId) + 1;
-        console.log(id);
         chooseSong(id);
-
     }
 
     const toggleButtons = () => {
         const play = document.getElementById('play');
-        const pause = document.getElementById('stop');
+        const stop = document.getElementById('stop');
         if (this.playing) {
-            play.hidden = true;
-            pause.hidden = false;
+            stop.style.display = "inline-block";
+            play.style.display = "none";
         } else {
-            play.hidden = false;
-            pause.hidden = true;
+            play.style.display = "inline-block";
+            stop.style.display = "none";
         }
     }
+
+    const setChosenSong = (nextSongId) => {
+        const self = this;
+        document.getElementById('current-song').innerHTML = this.songsList[nextSongId].name;
+        const songsList = document.getElementsByTagName('li');
+        Array.prototype.map.call(songsList, function (el) {
+            let id = el.getAttributeNode('songid').value;
+            if (id == self.songId) {
+                el.classList.remove('chosen');
+                el.classList.add('unchosen');
+            }
+            if (id == nextSongId) {
+                el.classList.add('chosen');
+                el.classList.remove('unchosen');
+            }
+        });
+    };
 }
 
 let app = new App();

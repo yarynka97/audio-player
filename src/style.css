@@ -1,0 +1,71 @@
+﻿body {
+    background-color: #444444;
+    text-align: center;
+}
+
+.player {
+    background-color: white;
+    width: 40%;
+    margin: 1% auto;
+}
+
+.control {
+    background-color: #333333;
+    color:white
+}
+.btn{
+    display: inline-block;
+    margin: 2%;
+}
+
+.btns {
+    height: 15vh
+}
+
+    .btn:hover {
+        color: #f2f2f2
+    }
+
+#current-song {
+    display: block;
+    width: 100%;
+    padding: 6vh 0 2vh;
+    height: 5vh;
+    margin: 0;
+    color: #2bbd98;
+    font-size: larger
+}
+
+#process {
+    color: #f2f2f2;
+    font-size:smaller;
+    display:block
+}
+
+#list {
+    text-decoration: none;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 0
+}
+
+    #list li {
+        display: block;
+        border-top: 1px solid #ddd;
+        padding: 3%;
+    }
+
+    #list .unchosen:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #list li:hover {
+            background-color: #2bbd98;
+            cursor: default
+        }
+#list .chosen {
+    background-color: #2bbd98;
+}

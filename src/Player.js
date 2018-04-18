@@ -7,7 +7,7 @@
     var self = this;
 
     this.playSong = function () {
-        let tittle = document.getElementById('current-song');
+        let tittle = document.getElementById('process');
         tittle.innerHTML = "Loading...";
         var xhr = new XMLHttpRequest();
         xhr.open('GET', self.url, true);
@@ -17,7 +17,7 @@
                 function (decodedArrayBuffer) {
                     self.buffer = decodedArrayBuffer;
                     start();
-                    tittle.innerHTML = "Playing";
+                    tittle.innerHTML = "";
                 }, function (e) {
                     tittle.innerHTML = 'Error decoding file';
                 });
@@ -34,7 +34,6 @@
     }
 
     this.stopSong = function () {
-        document.getElementById('current-song').innerHTML = '';
         this.source.stop(0);
     }
 }
