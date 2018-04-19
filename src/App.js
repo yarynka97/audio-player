@@ -36,7 +36,7 @@
     const loadSongsList = () => {
         var self = this;
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://s3.eu-central-1.amazonaws.com/web-player-music/songs.json', true);
+        xhr.open('GET', 'songs.json', true);
         xhr.onload = function () {
             self.songsList = JSON.parse(xhr.responseText).audio;
             self.songListLength = self.songsList.length;
