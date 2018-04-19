@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #444444;
+    background-color: #565656;
     text-align: center;
 }
 
@@ -62,7 +62,7 @@
         background-color: #f2f2f2;
     }
 
-    #list li:hover {
+    #list .unchosen:hover {
             background-color: #2bbd98;
             cursor: default
         }

@@ -1,5 +1,6 @@
 ﻿function App() {
     this.songsList;
+    this.songListLength = 0;
     this.songId = 0;
     this.playing = false;
     this.loadMessage = document.getElementById('current-song');
@@ -35,9 +36,10 @@
     const loadSongsList = () => {
         var self = this;
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'songs.json', true);
+        xhr.open('GET', 'https://s3.eu-central-1.amazonaws.com/web-player-music/songs.json', true);
         xhr.onload = function () {
             self.songsList = JSON.parse(xhr.responseText).audio;
+            self.songListLength = self.songsList.length;
             formTable();
         };
         xhr.send();
@@ -57,7 +59,7 @@
 
     const playPrev = () => {
         let id = this.songId === 0 ?
-            4 :
+            this.songListLength-1 :
             Number.parseInt(this.songId) - 1;
         chooseSong(id);
     }
@@ -73,7 +75,7 @@
     }
 
     const playNext = () => {
-        let id = (this.songId === 4) ?
+        let id = (this.songId === this.songListLength-1) ?
             0 :
             Number.parseInt(this.songId) + 1;
         chooseSong(id);
