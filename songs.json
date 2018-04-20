@@ -1,0 +1,34 @@
+﻿{
+  "audio": [
+    {
+      "id": 0,
+      "name": "Stefan Kartenberg - Mr Rabbit",
+      "src": "http://ccmixter.org/content/JeffSpeed68/JeffSpeed68_-_Mr_Rabbit_1.mp3"
+    },
+    {
+      "id": 1,
+      "name": "Kara Square - Hanging Eleven",
+      "src": "http://ccmixter.org/content/mindmapthat/mindmapthat_-_Hanging_Eleven.mp3"
+    },
+    {
+      "id": 2,
+      "name": "Admiral Bob - All the Lines",
+      "src": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_All_the_Lines_2.mp3"
+    },
+    {
+      "id": 3,
+      "name": "Kara Square - Hard Wired",
+      "src": "http://ccmixter.org/content/mindmapthat/mindmapthat_-_Hard_Wired.mp3"
+    },
+    {
+      "id": 4,
+      "name": "Jeris - Paint The Sky",
+      "src": "http://ccmixter.org/content/VJ_Memes/VJ_Memes_-_Paint_The_Sky.mp3"
+    },
+    {
+      "id": 5,
+      "name": "Paper Planes Durden ft. Airtone",
+      "src": "http://ccmixter.org/content/DURDEN/DURDEN_-_Paper_Planes_-_Durden_ft._Airtone.mp3"
+    }
+  ]
+}
