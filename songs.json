@@ -2,33 +2,33 @@
   "audio": [
     {
       "id": 0,
-      "name": "Stefan Kartenberg - Mr Rabbit",
-      "src": "http://ccmixter.org/content/JeffSpeed68/JeffSpeed68_-_Mr_Rabbit_1.mp3"
+      "name": "Alex Vaan - West",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/Alex_Vaan_-_West.mp3"
     },
     {
       "id": 1,
-      "name": "Kara Square - Hanging Eleven",
-      "src": "http://ccmixter.org/content/mindmapthat/mindmapthat_-_Hanging_Eleven.mp3"
+      "name": "MANWOMANCHILD - Chile La Roja,",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/MANWOMANCHILD_-_01_-_Chile_La_Roja.mp3"
     },
     {
       "id": 2,
-      "name": "Admiral Bob - All the Lines",
-      "src": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_All_the_Lines_2.mp3"
+      "name": "My Teenage Stride - Connect-shun",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/My_Teenage_Stride_-_Connect-shun.mp3"
     },
     {
       "id": 3,
-      "name": "Kara Square - Hard Wired",
-      "src": "http://ccmixter.org/content/mindmapthat/mindmapthat_-_Hard_Wired.mp3"
+      "name": "My Teenage Stride - Message",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/My_Teenage_Stride_-_Message.mp3"
     },
     {
       "id": 4,
-      "name": "Jeris - Paint The Sky",
-      "src": "http://ccmixter.org/content/VJ_Memes/VJ_Memes_-_Paint_The_Sky.mp3"
+      "name": "Royal Headache - Eloise",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/Royal_Headache_-_01_-_Eloise.mp3"
     },
     {
       "id": 5,
-      "name": "Paper Planes Durden ft. Airtone",
-      "src": "http://ccmixter.org/content/DURDEN/DURDEN_-_Paper_Planes_-_Durden_ft._Airtone.mp3"
+      "name": "Aglow Hollow - Arrow_Arrow",
+      "src": "https://s3.eu-central-1.amazonaws.com/web-player-music/Aglow_Hollow_-_01_-_Arrow_Arrow.mp3"
     }
   ]
 }
